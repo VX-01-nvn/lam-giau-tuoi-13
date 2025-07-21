@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Làm Giàu Tuổi 13</title>
+  <style>
+    body {
+      background: #111;
+      color: #0f0;
+      font-family: monospace;
+      text-align: center;
+      padding: 40px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 15px;
+      background: #0f0;
+      color: #111;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .money {
+      font-size: 40px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💼 CEO Duy – Tuổi 13 Làm Giàu 💰</h1>
+  <p class="quote">"Yêu cc, t làm giàu 😎"</p>
+
+  <div class="money" id="money">0 VNĐ</div>
+  <button onclick="addMoney()">+ Kiếm tiền</button>
+
+  <script>
+    let money = 0;
+    function addMoney() {
+      money += 10000;
+      document.getElementById("money").innerText = money.toLocaleString() + " VNĐ";
+    }
+  </script>
+
+</body>
+</html>
